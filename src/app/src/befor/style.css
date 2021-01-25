@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: lemonchiffon;
+}
+
+.contents {
+  padding: 20px;
+  margin: 20px;
+  border: solid 1px #000;
+
+  max-width: 420px;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+.item {
+  padding: 20px;
+  border: solid 1px #000;
+  box-shadow: 0 0 8px gray;
+  background-color: #eee;
+}
+
+.item:not(:first-of-type) {
+  margin-top: 10px;
+}

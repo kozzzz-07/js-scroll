@@ -1,5 +1,5 @@
 {
-  "name": "pure-js-de-ganbaru",
+  "name": "pure-js-scroll",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,7 @@
     "serve": "npx webpack-dev-server --open --mode development",
     "dev": "npx ts-node-dev --respawn",
     "watch": "npx webpack --watch",
+    "dev-db-serve": "npx json-server --watch ./src/testing/db.json --port 3004",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,8 +17,11 @@
     "@types/node": "^14.6.0",
     "@types/webpack": "^4.41.21",
     "@types/webpack-dev-server": "^3.11.0",
+    "css-loader": "^5.0.1",
     "html-loader": "^1.2.1",
     "html-webpack-plugin": "^4.3.0",
+    "json-server": "^0.16.3",
+    "style-loader": "^2.0.0",
     "ts-loader": "^8.0.2",
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.58",

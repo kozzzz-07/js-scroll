@@ -1,4 +1,6 @@
-export const getPosts = () => {
+import { Post } from "../models/model";
+
+export const getPosts = (): Promise<Post[]> => {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
     const method = "GET";

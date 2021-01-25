@@ -1,8 +1,8 @@
 import { getPosts } from "./app/services/http.service";
 import "./style.css";
 
-getPosts().then((res: any) => {
-  res.forEach((element: { data: any }) => {
+getPosts().then((res) => {
+  res.forEach((element) => {
     return contentsEl?.insertAdjacentHTML(
       "beforeend",
       `<div class="item">${element.data}</div>`

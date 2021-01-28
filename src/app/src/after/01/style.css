@@ -34,5 +34,5 @@
 }
 
 .is-not-scrolling {
-  display: none;
+  visibility: hidden;
 }
